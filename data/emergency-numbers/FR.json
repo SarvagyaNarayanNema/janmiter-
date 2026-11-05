@@ -1,0 +1,164 @@
+{
+  "country": "France",
+  "code": "FR",
+  "flag": "🇫🇷",
+  "region": "Europe",
+  "coordinates": { "lat": 46.2276, "lng": 2.2137 },
+  "universal": [
+    {
+      "number": "112",
+      "label": "Numéro d'Urgence Européen (Unified EU Emergency)",
+      "description": "Universal emergency number across France and the European Union, operating alongside France's specialized 15 (SAMU), 17 (Police), and 18 (Pompiers) lines."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Gendarmerie",
+      "icon": "ShieldAlert",
+      "description": "17 Police Secours for immediate law enforcement and public safety.",
+      "numbers": [
+        {
+          "number": "17",
+          "label": "Police Secours / Gendarmerie",
+          "audience": "Anyone witnessing or experiencing violence, theft, assault, or a road accident with injuries.",
+          "whenToUse": "Dial 17 to reach the nearest Police Nationale or Gendarmerie dispatch center immediately.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.service-public.fr/particuliers/vosdroits/F33954"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical (SAMU)",
+      "icon": "HeartPulse",
+      "description": "15 SAMU emergency medical dispatch, 114 deaf/SMS emergency, and 3114 crisis line.",
+      "numbers": [
+        {
+          "number": "15",
+          "label": "SAMU (Service d'Aide Médicale Urgente)",
+          "audience": "Anyone experiencing a medical emergency, coma, chest pain, hemorrhage, breathing distress, or intoxication.",
+          "whenToUse": "Dial 15 to speak directly with a regulating emergency doctor (médecin régulateur) or dispatch a SMUR mobile intensive care unit.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.service-public.fr/particuliers/vosdroits/F33954"
+        },
+        {
+          "number": "114",
+          "label": "Urgence 114 (Deaf, Hard-of-Hearing & Silent SMS/Video)",
+          "audience": "Deaf, hard-of-hearing, aphasic individuals, or anyone unable to speak aloud during an emergency.",
+          "whenToUse": "Send an SMS or start a video/text relay session at 114 to contact SAMU (15), Police (17), or Pompiers (18).",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.info.urgence114.fr/"
+        },
+        {
+          "number": "3114",
+          "label": "Numéro National de Prévention du Suicide",
+          "audience": "Individuals in psychological distress or suicidal crisis, and their loved ones.",
+          "whenToUse": "Call 3114 anytime to speak with a trained psychiatric nurse or psychologist.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://3114.fr/"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Rescue (Pompiers)",
+      "icon": "Flame",
+      "description": "18 Sapeurs-Pompiers for fires, road crashes, gas leaks, and casualty rescue.",
+      "numbers": [
+        {
+          "number": "18",
+          "label": "Sapeurs-Pompiers (Fire & Emergency Rescue)",
+          "audience": "Anyone reporting a fire, gas leak, drowning, electrocution, structural risk, or traffic collision.",
+          "whenToUse": "Dial 18 when physical rescue, firefighting, or rapid first-responder extraction is needed.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.service-public.fr/particuliers/vosdroits/F33954"
+        },
+        {
+          "number": "196",
+          "label": "CROSS Maritime Search & Rescue",
+          "audience": "Swimmers, sailors, and witnesses of emergencies at sea or along the French coast.",
+          "whenToUse": "Dial 196 for immediate coordination with French maritime rescue centers.",
+          "coverage": "French Coastlines & Territorial Waters",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.service-public.fr/particuliers/vosdroits/F33954"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "3919 Violences Femmes Info and 119 Allô Enfance en Danger.",
+      "numbers": [
+        {
+          "number": "3919",
+          "label": "Violences Femmes Info",
+          "audience": "Women victims of domestic, physical, psychological, or sexual violence, and witnesses.",
+          "whenToUse": "Call 3919 for anonymous, confidential guidance and shelter support (call 17 or 112 in immediate danger).",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://arretonslesviolences.gouv.fr/"
+        },
+        {
+          "number": "119",
+          "label": "Allô Enfance en Danger (Child Protection)",
+          "audience": "Children facing abuse or danger, and adults concerned about a minor's safety.",
+          "whenToUse": "Dial 119 anytime; calls do not appear on itemised phone bills.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.allo119.gouv.fr/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Cyber Crime & Fraud",
+      "icon": "GlobeLock",
+      "description": "Info Escroqueries and Cybermalveillance government assistance.",
+      "numbers": [
+        {
+          "number": "0 805 805 817",
+          "label": "Info Escroqueries (Ministry of the Interior Cyber Fraud)",
+          "audience": "Victims of online scams, phishing, identity theft, or fraudulent payments.",
+          "whenToUse": "Call to receive police guidance on filing a THESEE or Pharos cybercrime complaint.",
+          "coverage": "Nationwide",
+          "hours": "Mon–Fri 9am–6:30pm",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.cybermalveillance.gouv.fr/"
+        }
+      ]
+    }
+  ]
+}

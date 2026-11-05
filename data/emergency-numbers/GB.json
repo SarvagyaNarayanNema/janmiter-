@@ -1,0 +1,176 @@
+{
+  "country": "United Kingdom",
+  "code": "GB",
+  "flag": "🇬🇧",
+  "region": "Europe",
+  "coordinates": { "lat": 55.3781, "lng": -3.4360 },
+  "universal": [
+    {
+      "number": "999",
+      "label": "UK Emergency Services (Police, Ambulance, Fire, Coastguard)",
+      "description": "Primary UK emergency number for life-threatening situations. 112 also works identically across all UK mobile and fixed networks."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Public Safety",
+      "icon": "ShieldAlert",
+      "description": "Emergency 999 police response and 101 non-emergency crime reporting.",
+      "numbers": [
+        {
+          "number": "999",
+          "label": "Emergency Police Dispatch",
+          "audience": "Anyone facing immediate danger, violence, or a crime currently in progress.",
+          "whenToUse": "Call immediately if an offender is still at the scene or someone is in physical danger. If you cannot speak, press 55 when prompted (Silent Solution).",
+          "coverage": "England, Scotland, Wales & Northern Ireland",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers"
+        },
+        {
+          "number": "101",
+          "label": "Police Non-Emergency Number",
+          "audience": "Residents reporting past crimes (stolen car, property damage) where the offender has left and no one is in immediate danger.",
+          "whenToUse": "Use 101 to report non-urgent crimes or give information to local police without tying up 999 emergency operators.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.police.uk/pu/contact-us/"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & NHS",
+      "icon": "HeartPulse",
+      "description": "999 critical ambulance dispatch, NHS 111 urgent medical advice, and mental health support.",
+      "numbers": [
+        {
+          "number": "999",
+          "label": "NHS Emergency Ambulance",
+          "audience": "Patients with life-threatening emergencies such as cardiac arrest, stroke, severe breathing difficulty, or major trauma.",
+          "whenToUse": "Call 999 immediately when someone is seriously ill or injured and their life is at risk.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/"
+        },
+        {
+          "number": "111",
+          "label": "NHS 111 Urgent Medical & Mental Health Triage",
+          "audience": "Anyone with an urgent medical or mental health problem who is unsure whether to go to A&E.",
+          "whenToUse": "Call 111 when you need urgent medical help fast, or select the mental health option for immediate NHS crisis team support.",
+          "coverage": "England, Scotland & Wales",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://111.nhs.uk/"
+        },
+        {
+          "number": "116 123",
+          "label": "Samaritans Crisis & Emotional Support",
+          "audience": "Anyone in emotional distress, struggling to cope, or at risk of suicide.",
+          "whenToUse": "Call anytime day or night for free, confidential listening and crisis support.",
+          "coverage": "UK & Republic of Ireland",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.samaritans.org/"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire, Rescue & Coastguard",
+      "icon": "Flame",
+      "description": "Fire & Rescue Services and HM Coastguard maritime/coastal rescue.",
+      "numbers": [
+        {
+          "number": "999",
+          "label": "Fire & Rescue / HM Coastguard",
+          "audience": "Anyone reporting a fire, trapped person, chemical spill, or coastal/sea emergency.",
+          "whenToUse": "Dial 999 (or 112) and ask the operator for 'Fire' or 'Coastguard'.",
+          "coverage": "Nationwide & UK Coastal Waters",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "National Domestic Abuse Helpline and Childline support.",
+      "numbers": [
+        {
+          "number": "0808 2000 247",
+          "label": "National Domestic Abuse Helpline (Refuge)",
+          "audience": "Women and individuals experiencing domestic violence, coercive control, or abuse.",
+          "whenToUse": "Call for confidential refuge placement, safety planning, and crisis support (call 999 if in immediate physical danger).",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.nationaldahelpline.org.uk/"
+        },
+        {
+          "number": "0800 1111",
+          "label": "Childline UK",
+          "audience": "Children and young people under 19 facing abuse, bullying, neglect, or danger.",
+          "whenToUse": "Call anytime for confidential support; the call will not appear on the phone bill.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.childline.org.uk/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Highway & Cyber Crime",
+      "icon": "GlobeLock",
+      "description": "National Highways motorway breakdown line and Action Fraud cyber reporting.",
+      "numbers": [
+        {
+          "number": "0300 123 5000",
+          "label": "National Highways Motorway Helpline",
+          "audience": "Drivers stranded on motorways or major A-roads in England (not in a live lane).",
+          "whenToUse": "If stopped in a live motorway lane, call 999 immediately. Use 0300 123 5000 for hard-shoulder assistance or hazard reporting.",
+          "coverage": "England Motorways & Major A-Roads",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://nationalhighways.co.uk/"
+        },
+        {
+          "number": "0300 123 2040",
+          "label": "Action Fraud (UK National Fraud & Cyber Crime Centre)",
+          "audience": "Individuals and small businesses targeted by online scams, banking fraud, or hacking.",
+          "whenToUse": "Call to report cyber crime and financial fraud directly to the National Fraud Intelligence Bureau.",
+          "coverage": "England, Wales & Northern Ireland (call 101 in Scotland)",
+          "hours": "Mon–Fri 8am–8pm (24x7 for live cyber attacks)",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.actionfraud.police.uk/"
+        }
+      ]
+    }
+  ]
+}

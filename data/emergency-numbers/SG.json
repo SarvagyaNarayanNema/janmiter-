@@ -1,0 +1,164 @@
+{
+  "country": "Singapore",
+  "code": "SG",
+  "flag": "🇸🇬",
+  "region": "Southeast Asia",
+  "coordinates": { "lat": 1.3521, "lng": 103.8198 },
+  "universal": [
+    {
+      "number": "999",
+      "label": "Singapore Police Emergency (999) / SCDF Ambulance & Fire (995)",
+      "description": "Dial 999 for Police Emergency or 995 for Singapore Civil Defence Force (SCDF) Fire and Emergency Ambulance."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Public Safety",
+      "icon": "ShieldAlert",
+      "description": "999 Singapore Police Force emergency, 70999 SMS emergency, and 1800-255-0000 hotline.",
+      "numbers": [
+        {
+          "number": "999",
+          "label": "Singapore Police Force (SPF) Emergency",
+          "audience": "Anyone in immediate danger, witnessing a crime in progress, or requiring urgent police intervention.",
+          "whenToUse": "Call 999 immediately for urgent crimes or safety threats. If unsafe to speak, send an Emergency SMS to 70999.",
+          "coverage": "Island-wide (Singapore)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.police.gov.sg/"
+        },
+        {
+          "number": "1800 255 0000",
+          "label": "SPF Police Hotline (Non-Emergency)",
+          "audience": "Residents providing crime information or making non-urgent police inquiries.",
+          "whenToUse": "Use when there is no immediate danger to life or property.",
+          "coverage": "Island-wide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.police.gov.sg/"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Ambulance",
+      "icon": "HeartPulse",
+      "description": "995 SCDF Emergency Ambulance, 1777 Non-Emergency Ambulance, and 1767 SOS Crisis.",
+      "numbers": [
+        {
+          "number": "995",
+          "label": "SCDF Emergency Medical Services (Ambulance)",
+          "audience": "Patients experiencing life-threatening emergencies: cardiac arrest, stroke, breathlessness, trauma, or unconsciousness.",
+          "whenToUse": "Call 995 only for critical medical emergencies so SCDF ambulances remain available for life-threatening cases.",
+          "coverage": "Island-wide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.scdf.gov.sg/"
+        },
+        {
+          "number": "1777",
+          "label": "Non-Emergency Ambulance Hotline",
+          "audience": "Patients needing medical transport to a hospital or clinic for non-life-threatening conditions.",
+          "whenToUse": "Dial 1777 instead of 995 for minor injuries, stable fevers, or scheduled hospital transfers.",
+          "coverage": "Island-wide",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.scdf.gov.sg/"
+        },
+        {
+          "number": "1767",
+          "label": "Samaritans of Singapore (SOS) Crisis Hotline",
+          "audience": "Individuals in emotional crisis, feeling overwhelmed, or having thoughts of suicide.",
+          "whenToUse": "Call 1767 anytime for confidential emotional support and crisis intervention.",
+          "coverage": "Island-wide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.sos.org.sg/"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Hazmat Rescue",
+      "icon": "Flame",
+      "description": "995 Singapore Civil Defence Force firefighting and rescue.",
+      "numbers": [
+        {
+          "number": "995",
+          "label": "SCDF Fire & Rescue Dispatch",
+          "audience": "Anyone reporting building fires, gas leaks, chemical spills, or trapped individuals.",
+          "whenToUse": "Evacuate immediately and dial 995 to dispatch SCDF fire appliances and Red Rhino units.",
+          "coverage": "Island-wide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.scdf.gov.sg/"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "National Anti-Violence & Sexual Harassment Helpline (NAVH).",
+      "numbers": [
+        {
+          "number": "1800 777 0000",
+          "label": "National Anti-Violence & Sexual Harassment Helpline (NAVH)",
+          "audience": "Victims or witnesses of domestic violence, child abuse, elder abuse, or sexual harassment.",
+          "whenToUse": "Call 1800 777 0000 to report abuse or seek immediate social service protection (call 999 if in immediate physical danger).",
+          "coverage": "Island-wide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.msf.gov.sg/what-we-do/break-the-silence"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Cyber Scam & Expressway",
+      "icon": "GlobeLock",
+      "description": "1799 ScamShield Helpline and LTA Expressway EMAS recovery.",
+      "numbers": [
+        {
+          "number": "1799",
+          "label": "National Anti-Scam Helpline (ScamShield)",
+          "audience": "Anyone who suspects they are being targeted by a scam or has transferred funds to a scammer.",
+          "whenToUse": "Call 1799 immediately to verify if a call/link is a scam or to trigger bank anti-scam intervention.",
+          "coverage": "Island-wide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.scamshield.gov.sg/"
+        },
+        {
+          "number": "1800 2255 582",
+          "label": "LTA Expressway Monitoring & Advisory System (EMAS)",
+          "audience": "Motorists experiencing vehicle breakdowns or obstructions on Singapore expressways and tunnels.",
+          "whenToUse": "Call 1800-CALL-LTA for free EMAS tow-truck recovery to the nearest designated carpark on expressways.",
+          "coverage": "All Singapore Expressways",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.lta.gov.sg/"
+        }
+      ]
+    }
+  ]
+}

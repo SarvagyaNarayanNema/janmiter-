@@ -1,0 +1,152 @@
+{
+  "country": "Germany",
+  "code": "DE",
+  "flag": "🇩🇪",
+  "region": "Europe",
+  "coordinates": { "lat": 51.1657, "lng": 10.4515 },
+  "universal": [
+    {
+      "number": "112",
+      "label": "Feuerwehr & Rettungsdienst (European Emergency Number)",
+      "description": "Primary emergency number across Germany and the EU for immediate Ambulance/Emergency Doctor (Notarzt), Fire Brigade (Feuerwehr), and rescue dispatch."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police (Polizei)",
+      "icon": "ShieldAlert",
+      "description": "Dedicated 110 Polizei emergency dispatch across all German federal states.",
+      "numbers": [
+        {
+          "number": "110",
+          "label": "Polizeinotruf (Police Emergency)",
+          "audience": "Anyone witnessing a crime, traffic collision, assault, or security threat in Germany.",
+          "whenToUse": "Dial 110 for direct connection to the nearest state police (Landespolizei) dispatch center.",
+          "coverage": "Nationwide (All 16 Bundesländer)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.bmi.bund.de/"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Ambulance",
+      "icon": "HeartPulse",
+      "description": "112 Notarzt/Ambulance, 116 117 on-call doctor, and crisis support.",
+      "numbers": [
+        {
+          "number": "112",
+          "label": "Rettungsdienst & Notarzt (Emergency Ambulance)",
+          "audience": "Patients experiencing life-threatening conditions, heart attack, stroke, severe accidents, or respiratory failure.",
+          "whenToUse": "Dial 112 immediately for an emergency ambulance (Rettungswagen) and emergency physician (Notarzt).",
+          "coverage": "Nationwide & EU-wide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.bbk.bund.de/"
+        },
+        {
+          "number": "116 117",
+          "label": "Ärztlicher Bereitschaftsdienst (Non-Emergency On-Call Doctor)",
+          "audience": "Patients with urgent but non-life-threatening illness outside regular doctor office hours (nights, weekends, holidays).",
+          "whenToUse": "Call 116 117 when you need a doctor on nights or weekends but it is not a life-threatening 112 emergency.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.116117.de/"
+        },
+        {
+          "number": "116 123",
+          "label": "TelefonSeelsorge Crisis Helpline",
+          "audience": "Individuals in acute emotional distress, depression, or suicidal crisis.",
+          "whenToUse": "Call 116 123 (or 0800 111 0 111) for anonymous, free crisis counselling.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.telefonseelsorge.de/"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Rescue (Feuerwehr)",
+      "icon": "Flame",
+      "description": "Firefighting, technical rescue, and hazardous materials response.",
+      "numbers": [
+        {
+          "number": "112",
+          "label": "Feuerwehr (Fire & Technical Rescue)",
+          "audience": "Anyone reporting fires, smoke, gas leaks, trapped persons, or severe storm hazards.",
+          "whenToUse": "Dial 112 and report the location (Wo), what happened (Was), how many injured (Wie viele), and wait for questions (Warten).",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.bbk.bund.de/"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "Hilfetelefon Gewalt gegen Frauen and Nummer gegen Kummer.",
+      "numbers": [
+        {
+          "number": "116 016",
+          "label": "Hilfetelefon Gewalt gegen Frauen (Violence Against Women)",
+          "audience": "Women affected by domestic violence, sexual assault, stalking, or forced marriage.",
+          "whenToUse": "Call 116 016 for confidential counselling and shelter referrals in 18+ languages.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.hilfetelefon.de/"
+        },
+        {
+          "number": "116 111",
+          "label": "Nummer gegen Kummer (Child & Youth Helpline)",
+          "audience": "Children, teens, and adolescents facing abuse, family crisis, or danger.",
+          "whenToUse": "Call anonymously and free from any mobile or landline in Germany.",
+          "coverage": "Nationwide",
+          "hours": "Mon–Sat 2pm–8pm (110/112 for immediate 24x7 danger)",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.nummergegenkummer.de/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Autobahn & Cyber Security",
+      "icon": "GlobeLock",
+      "description": "Emergency card-blocking (116 116) and BSI cyber security authority.",
+      "numbers": [
+        {
+          "number": "116 116",
+          "label": "Sperr-Notruf (Emergency Bank Card & Digital ID Block)",
+          "audience": "Anyone whose bank cards, credit cards, SIM card, or online banking credentials were stolen or compromised.",
+          "whenToUse": "Dial 116 116 immediately after theft or cyber fraud to freeze German bank cards and electronic IDs.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.sperr-notruf.de/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "country": "Australia",
+  "code": "AU",
+  "flag": "🇦🇺",
+  "region": "Oceania",
+  "coordinates": { "lat": -25.2744, "lng": 133.7751 },
+  "universal": [
+    {
+      "number": "000",
+      "label": "Triple Zero — Primary Australian Emergency Service",
+      "description": "Australia's primary national emergency number for Police, Fire, and Ambulance. 112 also works from any mobile phone with coverage."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Public Safety",
+      "icon": "ShieldAlert",
+      "description": "Triple Zero (000) urgent police response and 131 444 non-urgent police assistance.",
+      "numbers": [
+        {
+          "number": "000",
+          "label": "Triple Zero — Police Emergency",
+          "audience": "Anyone in immediate danger, witnessing a serious crime, or involved in a major road crash.",
+          "whenToUse": "Call 000 immediately for life-threatening or time-critical police emergencies.",
+          "coverage": "Nationwide (All States & Territories)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.triplezero.gov.au/"
+        },
+        {
+          "number": "131 444",
+          "label": "Police Assistance Line (Non-Emergency)",
+          "audience": "Citizens reporting non-urgent crimes, minor property theft, or noise complaints.",
+          "whenToUse": "Call 131 444 when a police attendance or report is needed but no one is in immediate danger.",
+          "coverage": "All States & Territories (except VIC non-urgent)",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.triplezero.gov.au/"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Crisis",
+      "icon": "HeartPulse",
+      "description": "Emergency ambulances, Lifeline crisis support, and Poisons Information.",
+      "numbers": [
+        {
+          "number": "000",
+          "label": "Triple Zero — Emergency Ambulance",
+          "audience": "Patients with chest pain, severe bleeding, difficulty breathing, unconsciousness, or major trauma.",
+          "whenToUse": "Dial 000 and request 'Ambulance'. Use the Emergency+ app to read GPS coordinates to the operator.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.triplezero.gov.au/"
+        },
+        {
+          "number": "13 11 14",
+          "label": "Lifeline Australia Crisis Support",
+          "audience": "Individuals experiencing a personal crisis, suicidal thoughts, or severe emotional distress.",
+          "whenToUse": "Call 13 11 14 or text 0477 13 11 14 for confidential 24-hour crisis support and suicide prevention.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.lifeline.org.au/"
+        },
+        {
+          "number": "13 11 26",
+          "label": "Australian Poisons Information Centre",
+          "audience": "Anyone who has been poisoned, overdosed, or bitten/stung by venomous wildlife (snakes, spiders, marine stingers).",
+          "whenToUse": "Call for immediate toxicology advice; call 000 first if the person collapses or stops breathing.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.healthdirect.gov.au/poisons-information-centre"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Bushfire Rescue",
+      "icon": "Flame",
+      "description": "Urban fire brigades and rural bushfire emergency dispatch.",
+      "numbers": [
+        {
+          "number": "000",
+          "label": "Triple Zero — Fire & Bushfire Emergency",
+          "audience": "Anyone reporting building fires, bushfires, grassfires, or chemical spills.",
+          "whenToUse": "Call 000 immediately if you see flames or smoke threatening life or property.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.triplezero.gov.au/"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "1800RESPECT domestic violence counselling and Kids Helpline.",
+      "numbers": [
+        {
+          "number": "1800 737 732",
+          "audience": "People impacted by domestic, family, or sexual violence.",
+          "label": "1800RESPECT National Domestic & Sexual Violence Helpline",
+          "whenToUse": "Call 1800 737 732 for confidential counselling, safety planning, and emergency shelter referrals.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.1800respect.org.au/"
+        },
+        {
+          "number": "1800 55 1800",
+          "label": "Kids Helpline Australia",
+          "audience": "Young people aged 5 to 25 needing immediate support or protection.",
+          "whenToUse": "Call anytime for free, private counselling and safety intervention.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://kidshelpline.com.au/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Disaster (SES) & Cyber",
+      "icon": "GlobeLock",
+      "description": "State Emergency Service (SES) flood/storm rescue and Australian Cyber Security Hotline.",
+      "numbers": [
+        {
+          "number": "13 25 00",
+          "label": "State Emergency Service (SES) Flood, Storm & Cyclone",
+          "audience": "Residents experiencing roof damage, fallen trees, rising floodwaters, or storm damage.",
+          "whenToUse": "Call 13 25 00 for SES storm and flood assistance. If trapped in life-threatening floodwater, call 000 immediately.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.triplezero.gov.au/"
+        },
+        {
+          "number": "1300 292 371",
+          "label": "Australian Cyber Security Centre (1300 CYBER1)",
+          "audience": "Individuals and businesses experiencing cybercrime, ransomware, or identity compromise.",
+          "whenToUse": "Call to receive immediate technical guidance and report cyber incidents to the ASD/ACSC.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.cyber.gov.au/"
+        }
+      ]
+    }
+  ]
+}

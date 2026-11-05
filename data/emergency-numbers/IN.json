@@ -1,0 +1,244 @@
+{
+  "country": "India",
+  "code": "IN",
+  "flag": "🇮🇳",
+  "region": "South Asia",
+  "coordinates": { "lat": 20.5937, "lng": 78.9629 },
+  "universal": [
+    {
+      "number": "112",
+      "label": "Emergency Response Support System (ERSS)",
+      "description": "India's pan-India single unified emergency number integrating Police (100), Fire (101), Ambulance (108), and Women/Child safety dispatch with GPS location tracking."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Public Safety",
+      "icon": "ShieldAlert",
+      "description": "Immediate law enforcement dispatch, crime reporting, and railway security.",
+      "numbers": [
+        {
+          "number": "112",
+          "label": "Unified Police & Emergency Dispatch",
+          "audience": "Anyone in immediate danger, witnessing a crime, or requiring urgent police intervention anywhere in India.",
+          "whenToUse": "Call first for active crimes, assault, burglary, or threats to life. Connects to the nearest PCR van via ERSS GPS routing.",
+          "coverage": "Nationwide (All States & UTs)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://112.gov.in/"
+        },
+        {
+          "number": "100",
+          "label": "Traditional Police Control Room",
+          "audience": "General public needing local police station or district control room dispatch.",
+          "whenToUse": "Use if calling from a landline or region where legacy district PCR lines are preferred; automatically routes to 112 in most states.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://112.gov.in/"
+        },
+        {
+          "number": "139",
+          "label": "Indian Railways Security & Medical Helpline (RailMadad)",
+          "audience": "Train passengers experiencing theft, harassment, medical emergencies, or safety threats on board or at railway stations.",
+          "whenToUse": "Call immediately while travelling on Indian Railways to alert Railway Protection Force (RPF) and station medical teams at the next halt.",
+          "coverage": "All Indian Railways zones",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://railmadad.indianrailways.gov.in/"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Ambulance",
+      "icon": "HeartPulse",
+      "description": "Critical care trauma ambulances, maternal/neonatal transport, and mental health crisis support.",
+      "numbers": [
+        {
+          "number": "108",
+          "label": "Emergency Trauma & Critical Care Ambulance",
+          "audience": "General public facing any life-threatening medical emergency, trauma, heart attack, stroke, or severe accident.",
+          "whenToUse": "Use for critical emergencies requiring Advanced or Basic Life Support (ALS/BLS) ambulances with paramedics. Note the difference from 102: 108 is the primary all-emergency trauma response fleet.",
+          "coverage": "Nationwide across states & UTs",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://nhm.gov.in/index1.php?lang=1&level=2&sublinkid=1217&lid=189"
+        },
+        {
+          "number": "102",
+          "label": "Janani Shishu Suraksha (Maternal & Neonatal Ambulance)",
+          "audience": "Pregnant women, mothers in labor, newborns, and infants requiring hospital transport.",
+          "whenToUse": "Use specifically for pregnancy transport, delivery referrals, and inter-facility neonatal transfers under National Health Mission (distinct from 108 general trauma ambulances).",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://nhm.gov.in/index1.php?lang=1&level=2&sublinkid=1217&lid=189"
+        },
+        {
+          "number": "14416",
+          "label": "Tele-MANAS National Mental Health Helpline",
+          "audience": "Individuals experiencing acute emotional distress, suicidal ideation, panic attacks, or psychological crisis.",
+          "whenToUse": "Call anytime for confidential, multilingual counselling and immediate psychiatric crisis escalation (also reachable at 1800-891-4416).",
+          "coverage": "Nationwide (20+ Indian languages)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://telemanas.mohfw.gov.in/"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Rescue",
+      "icon": "Flame",
+      "description": "Fire tenders, building collapse rescue, hazardous material leaks, and urban search.",
+      "numbers": [
+        {
+          "number": "101",
+          "label": "Fire & Emergency Rescue Services",
+          "audience": "Anyone reporting structural fires, electrical fires, LPG gas leaks, or trapped persons.",
+          "whenToUse": "Call immediately when smoke or fire is detected or someone is trapped in an elevator, vehicle, or collapsed structure.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://dgfscdhg.gov.in/"
+        }
+      ]
+    },
+    {
+      "id": "highway",
+      "name": "Highway & Road Emergency",
+      "icon": "Car",
+      "description": "Dedicated National Highway patrol ambulances, cranes, and road crash response.",
+      "numbers": [
+        {
+          "number": "1033",
+          "label": "NHAI National Highway Emergency Helpline",
+          "audience": "Motorists, passengers, and bystanders on National Highways (NH) facing crashes, medical emergencies, or breakdowns.",
+          "whenToUse": "Use on National Highways; reaches NHAI highway patrol ambulances, tow cranes, and plaza responders faster than general city lines.",
+          "coverage": "All National Highways across India",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://nhai.gov.in/"
+        },
+        {
+          "number": "1073",
+          "label": "Road Accident Emergency Service",
+          "audience": "Drivers and Good Samaritans reporting severe traffic collisions on state and arterial roads.",
+          "whenToUse": "Use to report road traffic crashes when you need coordinated police and trauma ambulance dispatch on state highways.",
+          "coverage": "Most States & Major Corridors",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://morth.nic.in/"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "Dedicated protection helplines for women in distress, domestic abuse, and children in need of care.",
+      "numbers": [
+        {
+          "number": "1091",
+          "label": "Women in Distress Police Helpline",
+          "audience": "Women facing stalking, harassment, domestic violence, or immediate personal safety threats.",
+          "whenToUse": "Call when a woman needs urgent police protection, safe escort, or immediate intervention from a Women's Cell.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://wcd.nic.in/"
+        },
+        {
+          "number": "181",
+          "label": "Universal Women Helpline (One Stop Centre)",
+          "audience": "Women seeking emergency shelter, legal aid, medical support, or domestic violence counselling.",
+          "whenToUse": "Use to connect directly with Sakhi One Stop Centres for rescue, temporary shelter, and legal/psychological assistance.",
+          "coverage": "All States & UTs",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://wcd.nic.in/"
+        },
+        {
+          "number": "1098",
+          "label": "Childline India Emergency Helpline",
+          "audience": "Children in distress, runaway or missing children, or adults reporting child abuse, child labor, or abandonment.",
+          "whenToUse": "Call immediately whenever a minor (under 18) needs rescue, shelter, medical care, or protection from abuse.",
+          "coverage": "Nationwide (All Districts)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://wcd.nic.in/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Cyber Crime & Disaster",
+      "icon": "GlobeLock",
+      "description": "Financial cyber fraud freeze line and National/State Disaster Management control rooms.",
+      "numbers": [
+        {
+          "number": "1930",
+          "label": "National Cyber Crime Helpline (I4C)",
+          "audience": "Victims of UPI/banking fraud, unauthorized transactions, sextortion, or online identity theft.",
+          "whenToUse": "Call within the 'Golden Hour' (immediately after money is debited) so banks and police can freeze the fraudulent transfer before withdrawal.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://cybercrime.gov.in/"
+        },
+        {
+          "number": "1078",
+          "label": "National Disaster Management Authority (NDMA)",
+          "audience": "Citizens stranded or affected by floods, cyclones, earthquakes, landslides, or chemical disasters.",
+          "whenToUse": "Call during natural or man-made disasters to request NDRF rescue boats, airlift coordination, or relief camp details.",
+          "coverage": "Nationwide (011-26701728 / 1078)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://ndma.gov.in/"
+        },
+        {
+          "number": "1070",
+          "label": "State Disaster Control Room Helpline",
+          "audience": "Residents needing state-level flood, cyclone, or heatwave relief and district collectorate coordination.",
+          "whenToUse": "Dial 1070 to reach your State Emergency Operations Centre (SEOC) or 1077 for the District Emergency Operations Centre.",
+          "coverage": "State-level across India",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://ndma.gov.in/"
+        }
+      ]
+    }
+  ]
+}

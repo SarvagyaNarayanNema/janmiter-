@@ -1,0 +1,164 @@
+{
+  "country": "United Arab Emirates",
+  "code": "AE",
+  "flag": "🇦🇪",
+  "region": "Middle East",
+  "coordinates": { "lat": 23.4241, "lng": 53.8478 },
+  "universal": [
+    {
+      "number": "999",
+      "label": "UAE Police & Unified Emergency Dispatch",
+      "description": "Primary UAE emergency number connecting to Police Command & Control across all seven emirates (Abu Dhabi, Dubai, Sharjah, Ajman, UAQ, RAK, Fujairah)."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Coastguard",
+      "icon": "ShieldAlert",
+      "description": "999 Emergency Police, 901 Non-Emergency Police, and 996 Coastguard.",
+      "numbers": [
+        {
+          "number": "999",
+          "label": "Police Emergency Command Center",
+          "audience": "Residents, tourists, and motorists facing immediate danger, serious road accidents, or crime.",
+          "whenToUse": "Call 999 immediately for any emergency requiring rapid police patrol or road crash dispatch.",
+          "coverage": "All 7 Emirates",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies"
+        },
+        {
+          "number": "901",
+          "label": "Police Non-Emergency Call Center",
+          "audience": "Residents with general police inquiries, minor traffic documentation, or non-urgent reports.",
+          "whenToUse": "Dial 901 instead of 999 when there is no immediate threat to life or safety.",
+          "coverage": "Dubai & participating Emirates",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies"
+        },
+        {
+          "number": "996",
+          "label": "UAE Coastguard Maritime Rescue",
+          "audience": "Boaters, swimmers, and mariners facing distress in UAE territorial waters.",
+          "whenToUse": "Call 996 immediately for marine search and rescue or vessel emergencies.",
+          "coverage": "UAE Coastal Waters",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Ambulance",
+      "icon": "HeartPulse",
+      "description": "National Ambulance & Dubai Corporation for Ambulance Services (998).",
+      "numbers": [
+        {
+          "number": "998",
+          "label": "UAE Emergency Ambulance",
+          "audience": "Anyone experiencing a medical emergency, trauma, cardiac event, or severe injury.",
+          "whenToUse": "Dial 998 directly for immediate paramedic ambulance dispatch across any emirate.",
+          "coverage": "All 7 Emirates",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Civil Defence",
+      "icon": "Flame",
+      "description": "UAE Civil Defence firefighting and urban rescue (997).",
+      "numbers": [
+        {
+          "number": "997",
+          "label": "UAE Civil Defence (Fire & Rescue)",
+          "audience": "Anyone reporting building fires, vehicle fires, gas leaks, or trapped persons.",
+          "whenToUse": "Evacuate immediately and dial 997 to dispatch Civil Defence fire engines.",
+          "coverage": "All 7 Emirates",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "Ministry of Interior Child Protection and Dubai Foundation for Women and Children.",
+      "numbers": [
+        {
+          "number": "116 111",
+          "label": "MoI Child Protection Centre Hotline",
+          "audience": "Children at risk or anyone reporting child abuse, neglect, or exploitation in the UAE.",
+          "whenToUse": "Call to report any form of child abuse directly to the Ministry of Interior Child Protection Centre.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://moi.gov.ae/"
+        },
+        {
+          "number": "800 111",
+          "label": "Dubai Foundation for Women and Children (DFWAC)",
+          "audience": "Women and children experiencing domestic violence, abuse, or human trafficking.",
+          "whenToUse": "Call 800 111 for immediate shelter, protection, and confidential crisis support.",
+          "coverage": "UAE",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.dfwac.ae/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Cyber Crime & Utilities",
+      "icon": "GlobeLock",
+      "description": "eCrime / Aman Service cyber reporting and 991 emergency utility failure.",
+      "numbers": [
+        {
+          "number": "800 2626",
+          "label": "Aman Service (Security & Cyber Threat Reporting)",
+          "audience": "Residents reporting cyber extortion, online fraud, or security threats confidentially.",
+          "whenToUse": "Call 800 2626 (AMAN) or use the eCrime portal (901 in Dubai) to report cybercrime in Arabic, English, or Urdu.",
+          "coverage": "Abu Dhabi & UAE",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/cyber-safety-and-digital-security"
+        },
+        {
+          "number": "991",
+          "label": "Emergency Electricity & Water Failure",
+          "audience": "Residents facing sudden power outages or burst water mains during extreme heat or storms.",
+          "whenToUse": "Dial 991 for emergency electricity and water utility dispatch.",
+          "coverage": "UAE",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies"
+        }
+      ]
+    }
+  ]
+}

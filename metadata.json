@@ -1,0 +1,6 @@
+{
+  "name": "SOS World — Global Emergency Directory & AI Assistant",
+  "description": "Instant, offline-ready global emergency numbers directory explaining exactly who each number is for and when to use it, paired with a multilingual 3D AI emergency assistant.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

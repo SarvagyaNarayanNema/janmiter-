@@ -1,0 +1,176 @@
+{
+  "country": "Japan",
+  "code": "JP",
+  "flag": "🇯🇵",
+  "region": "East Asia",
+  "coordinates": { "lat": 36.2048, "lng": 138.2529 },
+  "universal": [
+    {
+      "number": "110",
+      "label": "Police Emergency (110) / Fire & Ambulance (119)",
+      "description": "Japan uses 110 for Police and 119 for Fire & Ambulance. Both lines provide 24x7 three-way interpretation for foreign visitors."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Coast Guard",
+      "icon": "ShieldAlert",
+      "description": "110 Police emergency, #9110 police consultation, and 118 Japan Coast Guard.",
+      "numbers": [
+        {
+          "number": "110",
+          "label": "Police Emergency Dispatch (Keisatsu)",
+          "audience": "Anyone reporting a crime, traffic accident, theft, or urgent safety threat in Japan.",
+          "whenToUse": "Dial 110 immediately for crimes or traffic collisions (even minor accidents require a 110 police report for insurance).",
+          "coverage": "Nationwide (All 47 Prefectures)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.npa.go.jp/"
+        },
+        {
+          "number": "118",
+          "label": "Japan Coast Guard Maritime Emergency",
+          "audience": "Anyone witnessing or involved in an accident at sea, coastal drowning, or maritime crime.",
+          "whenToUse": "Dial 118 immediately for marine search and rescue around Japanese coastlines.",
+          "coverage": "All Japanese Coastal Waters",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.kaiho.mlit.go.jp/"
+        },
+        {
+          "number": "#9110",
+          "label": "Police Consultation Hotline (Non-Emergency)",
+          "audience": "Residents seeking police advice on stalking, consumer trouble, cyber harassment, or non-urgent concerns.",
+          "whenToUse": "Dial #9110 when you need police consultation before an issue becomes a 110 emergency.",
+          "coverage": "Nationwide",
+          "hours": "24x7 (staffed daytime, automated/duty routing at night)",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.gov-online.go.jp/useful/article/201309/3.html"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Ambulance",
+      "icon": "HeartPulse",
+      "description": "119 Emergency Ambulance and #7119 urgent medical triage.",
+      "numbers": [
+        {
+          "number": "119",
+          "label": "Emergency Ambulance (Kyūkyūsha)",
+          "audience": "Anyone experiencing acute illness, severe injury, stroke, cardiac symptoms, or medical trauma.",
+          "whenToUse": "Dial 119 and state 'Kyūkyū desu' (It is a medical emergency) followed by your location. Multilingual interpretation is available.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.fdma.go.jp/"
+        },
+        {
+          "number": "#7119",
+          "label": "Emergency Medical Consultation Center",
+          "audience": "Patients unsure whether to call a 119 ambulance or visit an after-hours clinic.",
+          "whenToUse": "Dial #7119 to consult nurses and doctors on symptom urgency and open night/holiday hospitals.",
+          "coverage": "Tokyo, Osaka, Sapporo, Yokohama, Fukuoka & major prefectures",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.fdma.go.jp/mission/enrichment/appropriate/appropriate004.html"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Rescue",
+      "icon": "Flame",
+      "description": "119 Fire Department (Shōbōsha) and earthquake rescue.",
+      "numbers": [
+        {
+          "number": "119",
+          "label": "Fire & Rescue Dispatch (Kaji)",
+          "audience": "Anyone reporting a fire, gas leak, smoke, or trapped person.",
+          "whenToUse": "Dial 119 and state 'Kaji desu' (It is a fire) along with the address or nearest landmark.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.fdma.go.jp/"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "189 Child Guidance Center abuse line and #8008 DV consultation.",
+      "numbers": [
+        {
+          "number": "189",
+          "label": "Child Guidance Center Abuse Hotline (Ichihayaku)",
+          "audience": "Children experiencing abuse, parents struggling, or neighbors suspecting child maltreatment.",
+          "whenToUse": "Dial 189 to be routed immediately to the nearest Child Guidance Center for urgent child protection.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.cfa.go.jp/policies/jidougyakutai/gyakutai-taiou/189/"
+        },
+        {
+          "number": "0120-279-889",
+          "label": "DV Consultation Plus (Domestic Violence Hotline)",
+          "audience": "Anyone experiencing domestic or partner violence in Japan (multilingual chat/phone support).",
+          "whenToUse": "Call 0120-279-889 (24x7) or #8008 for confidential shelter and protection support.",
+          "coverage": "Nationwide (10+ languages supported)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://soudanplus.jp/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Disaster & Highway",
+      "icon": "GlobeLock",
+      "description": "171 Earthquake Disaster Message Dial, #9910 Road Emergency, and JNTO Tourist Hotline.",
+      "numbers": [
+        {
+          "number": "#9910",
+          "label": "MLIT Road Emergency Dial (Expressways & National Roads)",
+          "audience": "Drivers encountering fallen rocks, road cave-ins, debris, or hazards on expressways and national highways.",
+          "whenToUse": "Dial #9910 to report road hazards and obstructions directly to highway management centers.",
+          "coverage": "Nationwide Expressways & National Routes",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.mlit.go.jp/road/dia/"
+        },
+        {
+          "number": "050-3816-2787",
+          "label": "Japan Visitor Hotline (JNTO Multilingual Emergency Support)",
+          "audience": "International travellers in Japan needing emergency assistance, earthquake/typhoon info, or medical translation.",
+          "whenToUse": "Call anytime in English, Chinese, Korean, or Japanese during disasters, illness, or emergencies.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": false,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.japan.travel/en/plan/hotline/"
+        }
+      ]
+    }
+  ]
+}

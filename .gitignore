@@ -1,0 +1,11 @@
+node_modules
+dist
+dev-dist/
+.aistudio/
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+.playwright-cli/
+.gmp_cache/

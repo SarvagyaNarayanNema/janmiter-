@@ -1,0 +1,164 @@
+{
+  "country": "Canada",
+  "code": "CA",
+  "flag": "🇨🇦",
+  "region": "North America",
+  "coordinates": { "lat": 56.1304, "lng": -106.3468 },
+  "universal": [
+    {
+      "number": "911",
+      "label": "Canadian Emergency Dispatch (Police, Fire, Paramedics)",
+      "description": "Universal emergency number across all Canadian provinces and territories for immediate Police, Fire, and Ambulance dispatch."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Public Safety",
+      "icon": "ShieldAlert",
+      "description": "RCMP, provincial, and municipal police emergency dispatch.",
+      "numbers": [
+        {
+          "number": "911",
+          "label": "Police Emergency Response",
+          "audience": "Anyone experiencing or witnessing a crime in progress, violent threat, or serious motor vehicle collision.",
+          "whenToUse": "Call 911 immediately when life or property is in imminent danger. Bilingual service (English/French) + interpreter support.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.crtc.gc.ca/eng/phone/911/"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Crisis",
+      "icon": "HeartPulse",
+      "description": "Paramedic ambulances, 988 Suicide Crisis Helpline, 811 nurse advice, and Poison Control.",
+      "numbers": [
+        {
+          "number": "911",
+          "label": "Emergency Paramedic & Ambulance Dispatch",
+          "audience": "Individuals with acute medical emergencies such as cardiac arrest, stroke, severe trauma, or anaphylaxis.",
+          "whenToUse": "Dial 911 immediately when rapid ambulance transport is required.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.crtc.gc.ca/eng/phone/911/"
+        },
+        {
+          "number": "988",
+          "label": "Suicide Crisis Helpline (Canada)",
+          "audience": "Anyone in Canada thinking about suicide or worried about someone they know.",
+          "whenToUse": "Call or text 988 toll-free in English or French for trauma-informed crisis support.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://988.ca/"
+        },
+        {
+          "number": "811",
+          "label": "Provincial Health Link / Info-Santé Nurse Line",
+          "audience": "Residents needing urgent non-emergency health advice from a registered nurse.",
+          "whenToUse": "Dial 811 to assess symptoms and find out whether you need to visit an emergency room or urgent care clinic.",
+          "coverage": "All Provinces & Territories",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.canada.ca/en/health-canada.html"
+        },
+        {
+          "number": "1-844-764-7669",
+          "label": "Poison Control Canada (1-844-POISON-X)",
+          "audience": "Anyone exposed to toxic substances, medications, or hazardous household chemicals.",
+          "whenToUse": "Call immediately for poison triage and treatment instructions from toxicology specialists.",
+          "coverage": "Nationwide (except QC: 1-800-463-5060)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://infopoison.ca/"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Rescue",
+      "icon": "Flame",
+      "description": "Firefighters, hazardous materials response, and ice/water rescue.",
+      "numbers": [
+        {
+          "number": "911",
+          "label": "Fire & Rescue Dispatch",
+          "audience": "General public reporting structure fires, forest fires, carbon monoxide alarms, or rescues.",
+          "whenToUse": "Exit the building immediately and call 911 from outside.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.crtc.gc.ca/eng/phone/911/"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "Youth protection and domestic violence shelter network.",
+      "numbers": [
+        {
+          "number": "1-800-668-6868",
+          "label": "Kids Help Phone",
+          "audience": "Children, teens, and young adults needing immediate crisis counselling or safety intervention.",
+          "whenToUse": "Call 1-800-668-6868 or text CONNECT to 686868 for confidential support anywhere in Canada.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://kidshelpphone.ca/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Highway & Cyber Crime",
+      "icon": "GlobeLock",
+      "description": "Provincial highway advisories and Canadian Anti-Fraud Centre.",
+      "numbers": [
+        {
+          "number": "511",
+          "label": "Provincial Highway & Winter Road Service",
+          "audience": "Drivers checking highway closures, winter blizzard conditions, and ferry/bridge incidents.",
+          "whenToUse": "Dial 511 for official provincial Ministry of Transportation highway updates (call 911 for highway crashes).",
+          "coverage": "Most Canadian Provinces",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.tc.gc.ca/"
+        },
+        {
+          "number": "1-888-495-8501",
+          "label": "Canadian Anti-Fraud Centre (RCMP)",
+          "audience": "Victims of identity theft, wire fraud, phishing, or cyber extortion.",
+          "whenToUse": "Call after notifying your bank and local police to log a national fraud report.",
+          "coverage": "Nationwide",
+          "hours": "Mon–Fri 9am–4:45pm ET",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://antifraudcentre-centreantifraude.ca/"
+        }
+      ]
+    }
+  ]
+}

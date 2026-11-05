@@ -1,0 +1,176 @@
+{
+  "country": "United States",
+  "code": "US",
+  "flag": "🇺🇸",
+  "region": "North America",
+  "coordinates": { "lat": 37.0902, "lng": -95.7129 },
+  "universal": [
+    {
+      "number": "911",
+      "label": "Unified Emergency Dispatch (Police, Fire, EMS)",
+      "description": "Universal emergency number across the United States for immediate Police, Fire, and Ambulance dispatch via voice or Text-to-911."
+    }
+  ],
+  "categories": [
+    {
+      "id": "police",
+      "name": "Police & Public Safety",
+      "icon": "ShieldAlert",
+      "description": "Immediate law enforcement, active threat response, and highway patrol.",
+      "numbers": [
+        {
+          "number": "911",
+          "label": "Police Emergency Dispatch",
+          "audience": "Anyone witnessing or experiencing a crime in progress, threat to life, or violent incident.",
+          "whenToUse": "Call or text 911 immediately when safety is at risk. Enhanced 911 (E911) transmits mobile location to the nearest Public Safety Answering Point.",
+          "coverage": "Nationwide (All 50 States & Territories)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.911.gov/"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Crisis",
+      "icon": "HeartPulse",
+      "description": "Emergency Medical Services (EMS), poison control, and suicide/mental health crisis lifelines.",
+      "numbers": [
+        {
+          "number": "911",
+          "label": "Emergency Medical Services (EMS) & Ambulance",
+          "audience": "Anyone experiencing chest pain, stroke symptoms, severe bleeding, unconsciousness, or trauma.",
+          "whenToUse": "Call immediately when rapid paramedic intervention and ambulance transport are required.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.911.gov/"
+        },
+        {
+          "number": "988",
+          "label": "Suicide & Crisis Lifeline",
+          "audience": "Anyone experiencing suicidal thoughts, mental health crisis, substance use distress, or emotional overwhelm.",
+          "whenToUse": "Call or text 988 for free, confidential support from trained crisis counselors. Veterans can press 1 after dialing 988.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://988lifeline.org/"
+        },
+        {
+          "number": "1-800-222-1222",
+          "label": "America's Poison Centers Helpline",
+          "audience": "Parents, caregivers, or individuals exposed to toxic substances, medication overdose, or chemical splashes.",
+          "whenToUse": "Call immediately if someone swallows or inhales a suspected poison but is conscious and breathing (call 911 if unconscious).",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://poisonhelp.hrsa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire & Rescue",
+      "icon": "Flame",
+      "description": "Structural fire response, hazmat incidents, and technical rescue.",
+      "numbers": [
+        {
+          "number": "911",
+          "label": "Fire Department & Hazmat Dispatch",
+          "audience": "General public reporting structure fires, wildfires, carbon monoxide alarms, or gas leaks.",
+          "whenToUse": "Evacuate the area first, then dial 911 from a safe distance.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.usfa.fema.gov/"
+        }
+      ]
+    },
+    {
+      "id": "women-child",
+      "name": "Women & Child Safety",
+      "icon": "Users",
+      "description": "National domestic violence, sexual assault, and child abuse protection hotlines.",
+      "numbers": [
+        {
+          "number": "1-800-799-7233",
+          "label": "National Domestic Violence Hotline",
+          "audience": "Survivors of intimate partner violence, concerned friends/family, and individuals seeking safe shelter.",
+          "whenToUse": "Call 1-800-799-SAFE (7233) or text 'START' to 88788 for confidential safety planning and local shelter referrals.",
+          "coverage": "Nationwide (200+ languages via interpretation)",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.thehotline.org/"
+        },
+        {
+          "number": "1-800-422-4453",
+          "label": "Childhelp National Child Abuse Hotline",
+          "audience": "Children at risk of abuse, parents in crisis, and mandated reporters or bystanders.",
+          "whenToUse": "Call or text when a child is facing abuse or neglect and needs crisis intervention or CPS routing.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.childhelphotline.org/"
+        }
+      ]
+    },
+    {
+      "id": "cyber-disaster",
+      "name": "Disaster, Road & Cyber",
+      "icon": "GlobeLock",
+      "description": "FEMA disaster relief, state highway assistance, and CISA cyber incident reporting.",
+      "numbers": [
+        {
+          "number": "1-800-621-3362",
+          "label": "FEMA Disaster Assistance Helpline",
+          "audience": "Residents and families impacted by federally declared hurricanes, wildfires, floods, or tornadoes.",
+          "whenToUse": "Call after immediate life safety is secured to register for emergency housing, grants, and disaster recovery aid.",
+          "coverage": "Nationwide",
+          "hours": "7am–11pm ET daily (24x7 during major disasters)",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.fema.gov/"
+        },
+        {
+          "number": "511",
+          "label": "State DOT Highway & Roadside Info",
+          "audience": "Motorists needing real-time highway closures, winter storm road conditions, or non-emergency DOT motorist assist.",
+          "whenToUse": "Dial 511 on interstate and state highways for non-life-threatening roadside assistance and traffic advisories (call 911 for crashes).",
+          "coverage": "Most US States",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://ops.fhwa.dot.gov/511/"
+        },
+        {
+          "number": "1-844-729-2472",
+          "label": "CISA Central Cyber Incident Reporting",
+          "audience": "Organizations, critical infrastructure operators, and individuals reporting severe ransomware or cyber attacks.",
+          "whenToUse": "Call 1-844-SAY-CISA to report critical cybersecurity incidents or active ransomware attacks.",
+          "coverage": "Nationwide",
+          "hours": "24x7",
+          "tollFree": true,
+          "verificationStatus": "verified",
+          "lastVerified": "2026-11",
+          "sourceUrl": "https://www.cisa.gov/report"
+        }
+      ]
+    }
+  ]
+}
