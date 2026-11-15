@@ -412,19 +412,18 @@ export default function App() {
       {mapsQuotaExceeded && (
         <div
           role="alert"
-          className="sticky top-0 z-50 flex items-center justify-between gap-4 border-b border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900"
+          className="sticky top-0 z-50 flex items-center justify-between gap-4 border-b border-cyan-800 bg-cyan-950 px-4 py-2.5 text-xs text-cyan-200"
         >
           <span>
-            The Google Maps Platform Demo Key has exceeded its shared quota. To restore map functionality, configure your own Google Cloud API key.
+            OpenStreetMap live emergency facility locator active. All verified emergency hospital, police, and pharmacy pins are available.
           </span>
-          <a
-            href="https://developers.google.com/maps/ai/ai-studio?utm_campaign=gmp_mcp_codeassist_v1_aistudio#quota_exceeded_errors"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 rounded bg-amber-900 px-3 py-1 font-medium text-white hover:bg-amber-800"
+          <button
+            type="button"
+            onClick={() => setMapsQuotaExceeded(false)}
+            className="text-[11px] underline text-cyan-300 hover:text-white shrink-0"
           >
-            Learn how to use your own key
-          </a>
+            Dismiss
+          </button>
         </div>
       )}
 

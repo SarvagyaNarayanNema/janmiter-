@@ -193,5 +193,38 @@ test('buildAccessibilityAlertPattern creates 3 ascending high-contrast pulses an
   assert.ok(pattern.spokenAnnouncement.includes('1 1 2'));
 });
 
+test('emergencyFacilities provides verified facilities and calculates distance correctly', async () => {
+  const {
+    getFacilitiesForLocation,
+    calculateDistanceKm,
+    formatDistance,
+    VERIFIED_EMERGENCY_FACILITIES,
+  } = await import('./emergencyFacilities.ts');
+
+  assert.ok(VERIFIED_EMERGENCY_FACILITIES.length >= 20);
+
+  // New Delhi coordinates (Connaught Place)
+  const delhiLat = 28.6328;
+  const delhiLng = 77.2197;
+
+  const hospitals = getFacilitiesForLocation('IN', 'hospital', delhiLat, delhiLng);
+  assert.ok(hospitals.length >= 3);
+  assert.ok(hospitals[0].distanceKm !== undefined);
+  assert.ok(hospitals[0].distanceKm <= hospitals[1].distanceKm!);
+
+  const police = getFacilitiesForLocation('IN', 'police', delhiLat, delhiLng);
+  assert.ok(police.length >= 3);
+
+  const pharmacies = getFacilitiesForLocation('IN', 'pharmacy', delhiLat, delhiLng);
+  assert.ok(pharmacies.length >= 3);
+
+  // Test distance calculation and formatting
+  const d = calculateDistanceKm(28.6139, 77.209, 28.5684, 77.2069);
+  assert.ok(d > 0 && d < 10);
+  assert.equal(formatDistance(2.4), '2.4 km away');
+  assert.equal(formatDistance(0.4), '400 m away');
+});
+
+
 
 

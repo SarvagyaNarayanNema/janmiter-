@@ -4,7 +4,10 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
+import { fileURLToPath } from 'url';
+
 export default defineConfig(() => {
+  const rootDir = path.dirname(fileURLToPath(import.meta.url));
   return {
     plugins: [
       react(),
@@ -121,7 +124,7 @@ export default defineConfig(() => {
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(rootDir, '.'),
       },
     },
     server: {
