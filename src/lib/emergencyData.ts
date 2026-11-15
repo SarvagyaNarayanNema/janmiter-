@@ -113,6 +113,16 @@ export interface FlattenedNumberMatch {
   entry: EmergencyNumberEntry;
 }
 
+// Semantic and multilingual symptom/keyword mappings for emergency search
+const EMERGENCY_SEARCH_SYNONYMS: Record<string, string[]> = {
+  fire: ['aag', 'dhuan', 'fire', 'burn', 'flame', 'cylinder', 'gas leak', 'blast', 'smoke'],
+  highway: ['highway', 'nhai', 'road', 'accident', 'durghatna', 'crash', 'expressway', 'toll', 'breakdown', 'tow', 'vehicle'],
+  police: ['police', 'thana', 'crime', 'theft', 'chori', 'assault', 'fight', 'maarpeet', 'safety', 'attack', 'fir', 'pcr'],
+  medical: ['medical', 'ambulance', 'hospital', 'doctor', 'patient', 'heart', 'stroke', 'trauma', 'chot', 'bleeding', 'delivery', 'pregnant', 'maternal', 'neonatal', 'ilaaj', 'dawai', 'bimari', 'depression', 'suicide', 'mental health', 'tanav'],
+  'cyber-disaster': ['cyber', 'fraud', 'scam', 'otp', 'bank', 'upi', 'freeze', 'phishing', 'account', 'paise', 'dhokhadhadi', 'hacked', 'disaster', 'flood', 'baadh', 'earthquake', 'bhukamp', 'cyclone', 'toofan', 'landslide', 'ndrf', 'apada'],
+  'women-child': ['women', 'child', 'girl', 'mahila', 'aurat', 'bachha', 'minor', 'harassment', 'stalking', 'domestic violence', 'abuse', 'chedekhani', 'protection', 'shelter', 'sakhi', 'childline'],
+};
+
 export function searchNumbersInCountry(
   countryData: CountryEmergencyData,
   categoryId: string,
@@ -126,6 +136,12 @@ export function searchNumbersInCountry(
 
   const results: FlattenedNumberMatch[] = [];
   for (const cat of categories) {
+    // Check if query matches synonyms for this category
+    const catSynonyms = EMERGENCY_SEARCH_SYNONYMS[cat.id] || [];
+    const queryMatchesCategorySynonyms = q
+      ? catSynonyms.some((syn) => syn.includes(q) || q.includes(syn))
+      : false;
+
     for (const entry of cat.numbers) {
       if (!q) {
         results.push({
@@ -135,7 +151,7 @@ export function searchNumbersInCountry(
         });
       } else {
         const hay = `${entry.number} ${entry.label} ${entry.audience} ${entry.whenToUse} ${cat.name} ${entry.coverage}`.toLowerCase();
-        if (hay.includes(q)) {
+        if (hay.includes(q) || queryMatchesCategorySynonyms) {
           results.push({
             categoryId: cat.id,
             categoryName: cat.name,

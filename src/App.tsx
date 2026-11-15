@@ -46,6 +46,8 @@ import {
 } from './components/reactbits/ReactBitsComponents';
 import { RobotChatDrawer } from './components/RobotChatDrawer';
 import { NumberDetailModal } from './components/NumberDetailModal';
+import { CallConfirmationModal } from './components/CallConfirmationModal';
+import { EmergencyNumberUniverse } from './components/EmergencyNumberUniverse';
 import { OfflineBanner, PWAOfflineModal } from './components/PWAInstallModal';
 import { EmergencyMapSection } from './components/EmergencyMapSection';
 
@@ -102,6 +104,15 @@ export default function App() {
   const [activeDetailModal, setActiveDetailModal] = useState<{
     categoryName: string;
     entry: EmergencyNumberEntry;
+  } | null>(null);
+  const [callConfirmModal, setCallConfirmModal] = useState<{
+    isOpen: boolean;
+    number: string;
+    categoryName: string;
+    label: string;
+    audience?: string;
+    whenToUse?: string;
+    tollFree?: boolean;
   } | null>(null);
   const [isPwaModalOpen, setIsPwaModalOpen] = useState<boolean>(false);
   const [mapsQuotaExceeded, setMapsQuotaExceeded] = useState<boolean>(false);
@@ -353,6 +364,12 @@ export default function App() {
           className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300"
         >
           <a
+            href="#emergency-universe"
+            className="text-cyan-400 hover:text-cyan-300 hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0 font-semibold"
+          >
+            Universe
+          </a>
+          <a
             href="#directory"
             onClick={() => {
               if (audioAlertEnabled) {
@@ -458,42 +475,61 @@ export default function App() {
 
               <h1 className="font-display text-[clamp(2.25rem,4vw,3.6rem)] font-bold leading-[1.08] tracking-tight text-white max-w-2xl">
                 <SplitText
-                  text="The Right Emergency Number in Under Three Seconds."
-                  highlightWords={['Emergency', 'Three', 'Seconds.']}
+                  text="Help is closer than you think."
+                  highlightWords={['closer', 'think.']}
                 />
               </h1>
 
               <p className="text-base text-slate-300 leading-relaxed max-w-xl">
-                Know whether to dial <strong className="text-white">112</strong>,{' '}
-                <strong className="text-white">108</strong>,{' '}
-                <strong className="text-white">1033</strong>, or{' '}
-                <strong className="text-white">1930</strong> when every second counts.
-                Select your country to see verified emergency numbers, exactly who each
-                line serves, and when to call.
+                Find emergency assistance, discover important contacts, or speak to JanMitra in your language. Know whether to dial <strong className="text-white">{primaryUniversal.number}</strong>, <strong className="text-white">108</strong>, <strong className="text-white">1033</strong>, or <strong className="text-white">1930</strong> when every second counts.
               </p>
 
-              {/* Primary CTA & Country Detection Controls */}
+              {/* MOST PROMINENT UNIFIED EMERGENCY NUMBER CTA CARD */}
+              <div className="rounded-2xl border-2 border-red-500/60 bg-gradient-to-r from-red-950/80 via-[#1C1218] to-[#11131C] p-5 shadow-2xl shadow-red-950/40">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-1">
+                    <div className="text-[11px] font-bold uppercase tracking-wider text-red-400">
+                      {selectedCountry.flag} {selectedCountry.country} Emergency Response
+                    </div>
+                    <div className="font-mono-tabular text-4xl sm:text-5xl font-black tracking-tight text-white flex items-baseline gap-3">
+                      <span>{primaryUniversal.number}</span>
+                      <span className="text-xs sm:text-sm font-semibold text-slate-300 font-sans tracking-normal">
+                        {primaryUniversal.number === '112' ? 'National Emergency Number' : primaryUniversal.label}
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-300">
+                      {primaryUniversal.description}
+                    </p>
+                  </div>
+
+                  <div className="shrink-0">
+                    <a
+                      href={formatTelHref(primaryUniversal.number)}
+                      aria-label={`CALL ${primaryUniversal.number} NOW`}
+                      className="inline-flex items-center justify-center gap-2.5 rounded-xl bg-red-600 px-6 py-4 text-base font-bold text-white hover:bg-red-500 transition-all shadow-lg shadow-red-600/40 whitespace-nowrap active:scale-[0.98]"
+                    >
+                      <PhoneCall className="h-5 w-5" />
+                      <span>CALL {primaryUniversal.number} NOW</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Secondary Navigation & Country Detection Controls */}
               <div className="flex flex-wrap items-center gap-3 pt-1">
-                <Magnet>
-                  <a
-                    href="#directory"
-                    onClick={() => {
-                      if (audioAlertEnabled) {
-                        triggerDirectoryAudioAlert(selectedCountry);
-                      }
-                    }}
-                    className="inline-flex items-center gap-2 rounded-xl bg-red-600 px-6 py-3.5 text-sm font-bold text-white hover:bg-red-500 transition-colors whitespace-nowrap shadow-lg"
-                  >
-                    <PhoneCall className="h-4 w-4" />
-                    <span>Get Help Now ({selectedCountry.country})</span>
-                  </a>
-                </Magnet>
+                <a
+                  href="#emergency-universe"
+                  className="inline-flex items-center gap-2 rounded-xl border border-cyan-500/40 bg-cyan-950/40 px-5 py-3 text-sm font-bold text-cyan-200 hover:border-cyan-400 hover:bg-cyan-900/50 transition-colors whitespace-nowrap shadow-md"
+                >
+                  <Sparkles className="h-4 w-4 text-cyan-300" />
+                  <span>Explore Universe</span>
+                </a>
 
                 <button
                   type="button"
                   onClick={handleDetectCountry}
                   disabled={isDetectingGeo}
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-[#11131C] px-4 py-3.5 text-sm font-semibold text-slate-200 hover:border-red-500/50 hover:text-white transition-colors whitespace-nowrap"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-[#11131C] px-4 py-3 text-sm font-semibold text-slate-200 hover:border-red-500/50 hover:text-white transition-colors whitespace-nowrap"
                 >
                   <MapPin className="h-4 w-4 text-amber-400" />
                   <span>{isDetectingGeo ? 'Detecting...' : 'Detect My Country'}</span>
@@ -502,10 +538,10 @@ export default function App() {
                 <button
                   type="button"
                   onClick={() => setIsRobotOpen(true)}
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm font-semibold text-slate-200 hover:bg-white/[0.08] transition-colors whitespace-nowrap"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-slate-200 hover:bg-white/[0.08] transition-colors whitespace-nowrap"
                 >
                   <Sparkles className="h-4 w-4 text-red-400" />
-                  <span>Ask 3D AI Assistant</span>
+                  <span>Ask JanMitra AI</span>
                 </button>
               </div>
 
@@ -650,6 +686,35 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        {/* EMERGENCY NUMBER UNIVERSE: FLOATING NUMBERS + HYBRID DRAG & DROP */}
+        <EmergencyNumberUniverse
+          country={selectedCountry}
+          onSelectEntry={(categoryName, entry) =>
+            setActiveDetailModal({ categoryName, entry })
+          }
+          onRequestCallConfirm={(card) =>
+            setCallConfirmModal({
+              isOpen: true,
+              number: card.number,
+              categoryName: card.categoryName,
+              label: card.label,
+              audience: card.audience,
+              whenToUse: card.whenToUse,
+              tollFree: card.tollFree,
+            })
+          }
+          onNavigateToNearby={(facilityType) => {
+            const el = document.getElementById('nearby-map');
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          onAskAssistant={(prompt) => {
+            setAssistantPrompt(prompt);
+            setIsRobotOpen(true);
+          }}
+        />
 
         {/* PINNED UNIVERSAL EMERGENCY NUMBER BANNER */}
         <section
@@ -1239,6 +1304,18 @@ export default function App() {
           </div>
         </footer>
       </main>
+
+      {/* Call Confirmation Interface (Zero accidental dialing) */}
+      <CallConfirmationModal
+        isOpen={Boolean(callConfirmModal?.isOpen)}
+        number={callConfirmModal?.number || ''}
+        categoryName={callConfirmModal?.categoryName || ''}
+        label={callConfirmModal?.label || ''}
+        audience={callConfirmModal?.audience}
+        whenToUse={callConfirmModal?.whenToUse}
+        tollFree={callConfirmModal?.tollFree}
+        onClose={() => setCallConfirmModal(null)}
+      />
 
       {/* Deep-Dive Number Detail Modal */}
       <NumberDetailModal
