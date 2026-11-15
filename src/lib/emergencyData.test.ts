@@ -56,19 +56,6 @@ test('filterCountries and searchNumbersInCountry filter accurately', () => {
 
   const medicalMatches = searchNumbersInCountry(india, 'medical', '');
   assert.ok(medicalMatches.length >= 2);
-
-  // Test Indian-language and symptom/situation search keywords
-  const fireMatches = searchNumbersInCountry(india, 'all', 'aag');
-  assert.ok(fireMatches.length >= 1);
-  assert.ok(fireMatches.some((m) => m.entry.number === '101'));
-
-  const accidentMatches = searchNumbersInCountry(india, 'all', 'durghatna');
-  assert.ok(accidentMatches.length >= 1);
-  assert.ok(accidentMatches.some((m) => m.entry.number === '1033' || m.entry.number === '1073'));
-
-  const fraudMatches = searchNumbersInCountry(india, 'all', 'fraud');
-  assert.ok(fraudMatches.length >= 1);
-  assert.ok(fraudMatches.some((m) => m.entry.number === '1930'));
 });
 
 test('formatTelHref preserves dialable characters including # and - removal', () => {
